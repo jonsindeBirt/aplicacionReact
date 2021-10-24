@@ -1,10 +1,16 @@
 import "./App.css";
+//importamos el componente Cabecera de su fichero de origen
 import Cabecera from "./Cabecera";
 
+/*Esta función es lo que en React conocemos como "componente". Devuelve código JSX (HTML mezclado con Javascript). Escribimos los elementos que queremos que aparezcan en pantalla como si fuera HTML normal. Si queremos mostrar el HTML que tenemos en otros componentes, escribiremos el nombre del componente como si fuera una etiqueta HTML.
+
+A los componentes les podemos pasar información. Para ello, dentro de la etiqueta escribiremos el nombre y el valor de la información que queremos pasar. Esta información tendremos que recogerla en el componente "hijo"
+*/
 function App() {
   return (
     <>
       <CabeceraConNombre nombre="Nora" />
+      <Cabecera />
       <Cuerpo />
       <Footer />
     </>
@@ -40,6 +46,9 @@ function Footer() {
   return <a href="https://www.birt.eus/">Birt</a>;
 }
 
+/**
+ * Esto es un componente que recibe información o propiedades del componente padre. Esa información será un objeto de Javascript, así que tendremos que acceder mediante la notación de punto, es decir, propiedades.`nombreDeLaPropiedad`. Este `nombreDeLaPropiedad`será el nombre que le damos en el componente padre
+ */
 function CabeceraConNombre(propiedades) {
   return (
     <h1>
