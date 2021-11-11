@@ -3,6 +3,6 @@ function Cabecera() {
 }
 
 /**
- * Para poder separar componentes y utilizarlos desde diferentes ficheros, tenemos que exportarlos de la siguiente manera:
+ * Para poder separar componentes y utilizarlos desde diferenteSs ficheros, tenemos que exportarlos de la siguiente manera:
  */
 export default Cabecera;
